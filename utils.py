@@ -33,3 +33,6 @@ def nums2binarycode(nums:List,binary_code_len):
         for j, v in enumerate(binary_code_list):
             binay_code[idx, binary_code_len - len(binary_code_list) + j] = v
     return binay_code
+
+def out_dim(num_class:int) -> int:
+    return int( np.log2(num_class - 1)) + 1
